@@ -5,20 +5,22 @@
     </div>
 
     <div class="col-xs-12 col-md-6">
+
       <h1><%= @cocktail.name %></h1>
 
-      <% @doses.each do |dose| %>
-        <p><%= dose.description %></p>
-        <p><%= dose.ingredient.name %></p>
-        <p><%= link_to "Edit dose", edit_cocktail_dose_path(@cocktail, dose) %></p>
-        <p><%= link_to "Delete dose", cocktail_dose_path(@cocktail, dose),
-          method: :delete,
-          data: { confirm: 'Are you sure?' } %></p>
-      <% end %>
-
-      <%= link_to "Add doses to this cocktail", new_cocktail_dose_path(@cocktail)%>
-
-      <%= link_to "Back to list", cocktails_path %>
+      <div class="card-white text-center">
+        <% @doses.each do |dose| %>
+          <p><%= dose.description %> • <%= dose.ingredient.name %></p>
+          <p><%= link_to "Edit dose", edit_cocktail_dose_path(@cocktail, dose) %>
+          <%= link_to "Delete dose", cocktail_dose_path(@cocktail, dose),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %></p>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to "Add doses to this cocktail",new_cocktail_dose_path(@cocktail), class: 'btn btn-medium-blanc'%>
+        <%= link_to "Back to list", cocktails_path, class: 'btn btn-medium-blanc' %>
+      </div>
     </div>
   </div>
 </div>
