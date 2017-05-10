@@ -1,0 +1,59 @@
+.card {
+  height: 400px;
+  background-size: cover !important;
+  opacity:0.85;
+  color: #282c37;
+  position: relative;
+  border-radius: 2px;
+  margin-top: 20px;
+  padding: 30px;
+  box-shadow: 1px 1px 2px #9baec8;
+}
+.card-title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+.card-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10px;
+}
+.card-review {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 22px;
+}
+.card-description p {
+  font-size: 15px;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}

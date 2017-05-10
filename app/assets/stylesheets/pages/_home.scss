@@ -2,3 +2,22 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+.banner {
+  background-image: url('bar-tender.jpg');
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+}
+
+.banner h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.content {
+  margin: 175px;
+}
